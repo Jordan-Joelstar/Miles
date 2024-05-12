@@ -549,7 +549,7 @@ smd(
        }
  
        let video = await astroJson(
-         "https://toxicdevilapi.vercel.app/downloader/twitter?url=" + query
+         "https://api.maher-zubair.tech/download/twitter?url=" + query
        );
  
        if (!video || !video.status === 200) {
@@ -1356,7 +1356,7 @@ smd(
      let _0x25d045 = _0x1f76d0 ? _0x1f76d0 : _0x54463e.reply_text;
      var _0x2e913a = _0x25d045.toLowerCase().includes("doc") ? "document" : "audio";
      if (!_0x25d045) {
-       return _0x54463e.reply("*" + prefix + "play back in black*");
+       return _0x54463e.reply("*" + prefix + "cue 23 burnaboy*");
      }
      let _0x2eca3d = ytIdRegex.exec(_0x25d045) || [];
      let _0xb6fd2d = _0x2eca3d[0] || false;
@@ -1395,7 +1395,7 @@ smd(
        fs.unlinkSync(_0x37323e);
      } catch {}
    } catch (_0x593953) {
-     return _0x54463e.error(_0x593953 + "\n\ncommand: play", _0x593953, "*_Video not Found_*");
+     return _0x54463e.error(_0x593953 + "\n\ncommand: play", _0x593953, "*_eyaah! vid not found🌝_*");
    }
  });
  smd({
@@ -1667,8 +1667,8 @@ smd(
    }
  );
  smd({
-   pattern: "play",
-   alias: ["audio"],
+   pattern: "song",
+   alias: [" play"],
    desc: "Downloads audio from youtube.",
    category: "downloader",
    filename: __filename,
@@ -1676,11 +1676,11 @@ smd(
  }, async (_0x2c2023, _0x4ec99f) => {
    try {
      if (!_0x4ec99f) {
-       return await _0x2c2023.reply("*_Give me a query boss, eg play 23 burnaboy_*");
+       return await _0x2c2023.reply("*_No query given, werey🕷_*");
      }
      let _0x3b2ca6 = await yts(_0x4ec99f);
      let _0x4123ae = _0x3b2ca6.all[0];
-     let _0x5883a9 = "\t *𝙼𝙸𝙻𝙴𝚂 𝚂𝙾𝙽𝙶 𝙼𝙴𝙳𝙸𝙰*   \n\n*Title :* " + _0x4123ae.title + "\n*Url :* " + _0x4123ae.url + "\n*Description :* " + _0x4123ae.timestamp + "\n*Views :* " + _0x4123ae.views + "\n*Uploaded :* " + _0x4123ae.ago + "\n*Artiste :* " + _0x4123ae.author.name + "\n\n\n_Reply 1 To Video_ Or _1 document_\n_Reply 2 To Audio_ Or _2 document_";
+     let _0x5883a9 = "\t *𝙼𝙸𝙻𝙴𝚂 • sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*   \n\n*Title :* " + _0x4123ae.title + "\nUrl : " + _0x4123ae.url + "\n*Description :* " + _0x4123ae.timestamp + "\n*Views :* " + _0x4123ae.views + "\n*Uploaded :* " + _0x4123ae.ago + "\n*Author :* " + _0x4123ae.author.name + "\n\n\n_Reply 1 To Video_ Or _1 document_\n_Reply 2 To Audio_ Or _2 document_";
      let _0x3885cc = await smdBuffer(_0x4123ae.thumbnail);
      var _0x44a363 = {
        ...(await _0x2c2023.bot.contextInfo(Config.botname, "ʏᴏᴜᴛᴜʙᴇ ꜱᴏɴɢ", _0x3885cc))
@@ -1707,7 +1707,7 @@ smd(
        return await _0x1c8285.reply("*_Give Me Search Query!_*");
      }
      let _0x2878ec = await yts(_0xca939c);
-     let _0x4186e4 = "*𝙼𝙸𝙻𝙴𝚂 𝚈𝙾𝚄𝚃𝚄𝙱𝙴 𝙼𝙴𝙳𝙸𝙰* \n*_______________________________* \n\n_Reply Any Number To Download._\n  _For Audio: 1 mp3._\n  _For Video: 1 video._\n  _For document: 1 document._\n\n_Results For : " + _0xca939c + "_ \n\n";
+     let _0x4186e4 = "*𝙼𝙸𝙻𝙴𝚂 • ʏᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅ* \n*_______________________________* \n\n_Reply Any Number To Download._\n  _For Audio: 1 mp3._\n  _For Video: 1 video._\n  _For document: 1 document._\n\n_Results For : " + _0xca939c + "_ \n\n";
      let _0x463366 = 1;
      for (let _0x308e22 of _0x2878ec.all) {
        _0x4186e4 += " \n*" + _0x463366++ + " : " + _0x308e22.title + (_0x308e22.timestamp ? "(" + _0x308e22.timestamp + ")" : "") + "*\n*Url : " + _0x308e22.url + "*";
@@ -1829,7 +1829,7 @@ smd(
          }
        }
      } else {
-       await m.send("*_couldn't process request_*");
+       await m.send("*_Request not be preceed!!_*");
      }
    } catch (error) {
      await m.error(error + "\n\ncommand: threads", error, "*_No responce from API, Sorry!!_*");
@@ -1995,7 +1995,7 @@ smd(
  }) => {
    if (_0xb75e78.quoted && _0xb75e78.text) {
      const _0x5b8ee5 = _0xb75e78.quoted.text.split("\n");
-     if (_0x5b8ee5[0].includes("ᴀsᴛᴀ-ᴍᴅ • sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ")) {
+     if (_0x5b8ee5[0].includes("𝙼𝙸𝙻𝙴𝚂 • sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ")) {
        const _0x1724ba = _0x5b8ee5.find(_0x525632 => _0x525632.startsWith("Url :"));
        let _0x43a95e = _0x1724ba.replace("Url :", "").trim();
        try {
@@ -2048,7 +2048,7 @@ smd(
        } catch (_0x189dd8) {
          return await _0xb75e78.reply("Error While Downloading Video : " + _0x189dd8);
        }
-     } else if (_0x5b8ee5[0].includes("ᴀsᴛᴀ-ᴍᴅ • ʏᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅ")) {
+     } else if (_0x5b8ee5[0].includes("𝙼𝙸𝙻𝙴𝚂 • ʏᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅ")) {
        let _0x307bb6 = "*" + _0xb75e78.text.split(" ")[0] + " : ";
        const _0x56275d = _0x5b8ee5.find(_0x3b5e74 => _0x3b5e74.startsWith(_0x307bb6));
        if (_0x56275d) {
@@ -2088,7 +2088,7 @@ smd(
            _0xb75e78.error(_0x3de0e2 + "\n\nCommand yts Listener", _0x3de0e2, "*Video Not Found!*");
          }
        }
-     } else if (_0x5b8ee5[0].includes("ᴀsᴛᴀ-ᴍᴅ • ᴀᴘᴋ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪsᴛ")) {
+     } else if (_0x5b8ee5[0].includes("𝙼𝙸𝙻𝙴𝚂 • ᴀᴘᴋ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪsᴛ")) {
        let _0x35d668 = "*" + _0xb75e78.text.split(" ")[0] + " : ";
        const _0x205a5f = _0x5b8ee5.find(_0x304058 => _0x304058.startsWith(_0x35d668));
        if (_0x205a5f) {
