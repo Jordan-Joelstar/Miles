@@ -47,7 +47,7 @@
 
 🕸. ***Get Session ID (SERVER 1)***
     <br>
-<a href='https://msid1-c18884699851.herokuapp.com/' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=blue&labelColor=black&color=black'/></a>
+<a href='' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=blue&labelColor=black&color=black'/></a>
 
 🕸. ***Get Session ID (SERVER 2)***
     <br>
@@ -60,7 +60,7 @@
 
 🕸.  ***FORK JORDAN-JOELSTAR REPO***
     <br>
-<a href='https://github.com/jamesxtreme/JORDAN-JOELSTAR/fork' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/Fork Repo-100000?style=for-the-badge&logo=scan&logoColor=blue&labelColor=black&color=black'/></a>
+<a href='https://github.com/Jordan-joelstar/miles/fork' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/Fork Repo-100000?style=for-the-badge&logo=scan&logoColor=blue&labelColor=black&color=black'/></a>
 
 🕸. ***DEPLOY FREE ON CODESPACE. SEE TUTORIALS FIRST***
     <br>
@@ -68,7 +68,7 @@
 
 🕸.  ***DEPLOY ON HEROKU***
     <br>
-<a href='https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fjamesxtreme%2FJORDAN-JOELSTAR' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=heroku&logoColor=blue'/></a>
+<a href='https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fjordan-joelstar%2Fmiles' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=heroku&logoColor=blue'/></a>
 
 🕸.  ***SEE TUTORIALS FOR HEROKU DEPLOY***
     <br>
