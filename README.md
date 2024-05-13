@@ -29,7 +29,7 @@
 
 
 
-### BOT FEATURES
+### 𝗠𝗜𝗟𝗘𝗦 𝗙𝗘𝗔𝗧𝗨𝗥𝗘𝗦
 ---
 [![Typing SVG](https://readme-typing-svg.demolab.com/?lines=🕷ANIME,+AI,+GAMES,+FUN;MEDIA,+DOWNLOADER,+LOGO,+EDITS;GROUP,+CHATS,+PRIVACY,+GFX;STICKER,+EMAIL,+CONVERTER,+A-REPLY;AND+MUCH+MORE...🕸)](https://git.io/typing-svg)
 
@@ -43,7 +43,7 @@
 
     
    
-## STEPS TO DEPLOY MILES
+## 𝗗𝗘𝗣𝗟𝗢𝗬 𝗣𝗥𝗢𝗖𝗘𝗗𝗨𝗥𝗘𝗦
 
 🕸. ***Get Session ID (SERVER 1)***
     <br>
