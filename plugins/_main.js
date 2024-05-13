@@ -488,7 +488,7 @@ smd({
   try {
     let {
       data: _0x44f98c
-    } = await axios.get("https://api.github.com/repos/jamesxtreme/jordan-joelstar");
+    } = await axios.get("https://api.github.com/repos/jordan-joelstar/miles");
     let _0x1c73f9 = ("\n𝗜𝗠 𝗠𝗜𝗟𝗘𝗦, 𝗬𝗢𝗨𝗥 𝗙𝗥𝗜𝗘𝗡𝗗𝗟𝗬 𝗡𝗘𝗜𝗚𝗛𝗕𝗢𝗨𝗥𝗛𝗢𝗢𝗗, 𝗗𝗘𝗣𝗟𝗢𝗬𝗘𝗗 𝗕𝗬  *" + Config.ownername + "*.\n\n  *❲❒❳ 🕷𝗦𝗧𝗔𝗥𝗦:* " + (_0x44f98c?.stargazers_count || "120+") + " stars\n  *❲❒❳ 🕷𝗙𝗢𝗥𝗞𝗦:* " + (_0x44f98c?.forks_count || "1000+") + " forks\n  *❲❒❳ 🕷𝗔𝗨𝗧𝗛𝗢𝗥:* Jordan-Joelstar\n  *❲❒❳ 🕷𝗖𝗥𝗘𝗔𝗧𝗘𝗗 𝗢𝗡:* " + (_0x44f98c?.created_at || "undefined") + "\n  *❲❒❳ 🕷𝗥𝗘𝗣𝗢:* _https://github.com/jordan-joelstar/miles_\n  *❲❒❳ 🕷𝗦𝗖𝗔𝗡:* _" + scan + "_" + (Config.caption ? "\n\n" + Config.caption : "")).trim();
     return await _0x45da98.sendUi(_0x45da98.jid, {
       caption: _0x1c73f9
