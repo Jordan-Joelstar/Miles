@@ -75,7 +75,7 @@ const {
 *Followers:* ${followers}
 *Following:* ${following}
 
-\t*ASTA IG STALKER*
+\t*MILES IG STALKER*
 `;
 
       await m.bot.sendFromUrl(m.from, photo_profile, caption, m, {}, "image");
@@ -2160,6 +2160,68 @@ smd(
      }
    }
  })(_0xe8a3, 997920);
+ smd({
+    pattern: "play",
+    alias: ["music"],
+    desc: "Sends info about the query(of youtube video/audio).",
+    category: "downloader",
+    filename: __filename,
+    use: "<faded-Alan walker.>",
+  },
+  async (message, query) => {
+    try {
+      let match = query ? query : message.reply_text;
+      var TYPE = match.toLowerCase().includes("doc") ? "document" : "audio";
+      if (!match) {
+        return message.reply("*" + prefix + "play back in black*");
+      }
+      let result = ytIdRegex.exec(match) || [];
+      let Rmatch = result[0] || false;
+      if (!Rmatch) {
+        let file = await yts(match);
+        let endResult = file.videos[0];
+        Rmatch = endResult.url;
+      }
+      result = ytIdRegex.exec(Rmatch) || [];
+      let data = await yt.getInfo(result[1]);
+      let filename = data.title || resulted || result[1];
+      if (data && data.duration >= videotime) {
+        return await message.reply(
+          "*_Can't dowanload, file duration too big_*"
+        );
+      }
+      await message.send("_Downloading " + data.title + "?_");
+      let resulted = await yt.download(result[1], {
+        type: "audio",
+        quality: "best",
+      });
+      var MTYPE = {
+        ...(await message.bot.contextInfo(Config.botname, "ꜱᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ")),
+      };
+      if (resulted) {
+        await message.bot.sendMessage(message.jid, {
+          [TYPE]: {
+            url: resulted,
+          },
+          fileName: filename,
+          mimetype: "audio/mpeg",
+          contextInfo: MTYPE,
+        });
+      } else {
+        message.send("*_Video not Found_*");
+      }
+      try {
+        fs.unlinkSync(resulted);
+      } catch {}
+    } catch (error) {
+      return message.error(
+        error + "\n\ncommand: play",
+        error,
+        "*_Video not Found_*"
+      );
+    }
+  }
+);
  smd({
    pattern: "playlist",
    desc: _0xf3b3b9(229),
