@@ -368,7 +368,7 @@ smd({
             if (!text) return message.reply(`*_Uhh please, give me a query_*\n*_Example : ${prefix}google Who is the Current president of Nigeria._*`);
             let google = require('google-it');
             google({ 'query': text}).then(res => {
-                let msg= `Google Search From : ${text} \n\n`;
+                let msg= `💭 : ${text} \n\n`;
                 for (let g of res) {
                     msg+= `➣ *Title : ${g.title}*\n`;
                     msg+= `➣ *Description :* ${g.snippet}\n`;
