@@ -113,9 +113,9 @@ let {
      } else {
        return _0x1067b4.reply("*Please provide an option below !*\n      *" + prefix + "setclose 30 second*\n      *" + prefix + "setclose 10 minute*\n      *" + prefix + "setclose 1 hour*");
      }
-     _0x1067b4.reply("*Group close in next '" + _0x58f103[0] + " " + _0x58f103[1] + "'!*");
+     _0x1067b4.reply("*OK boss. I will mute this group in the next '" + _0x58f103[0] + " " + _0x58f103[1] + "'!*");
      setTimeout(() => {
-       const _0x54c8b1 = "*Group closed!*";
+       const _0x54c8b1 = "*Now I can rest a bit😌. Gotta go check on Gwen*";
        _0x1067b4.bot.groupSettingUpdate(_0x1067b4.from, "announcement");
        _0x1067b4.reply(_0x54c8b1);
      }, _0x8a6cf1);
@@ -158,9 +158,9 @@ let {
      } else {
        return _0x4f388a.reply("*Please provide an option below !*\n      *" + prefix + "setopen 40 second*\n      *" + prefix + "setopen 10 minute*\n      *" + prefix + "setopen 1 hour*");
      }
-     _0x4f388a.reply("*Group open in next '" + _0x26380a[0] + " " + _0x26380a[1] + "'!*");
+     _0x4f388a.reply("*OK boss. I will unmute this group in the next '" + _0x26380a[0] + " " + _0x26380a[1] + "'!*");
      setTimeout(() => {
-       const _0x9e99d4 = "*Hurray! Group Opened*\n *Now Members Can Send Messages*";
+       const _0x9e99d4 = "*Yes!! Finally opened. I enjoy reading yall conversations😌*";
        _0x4f388a.bot.groupSettingUpdate(_0x4f388a.from, "not_announcement");
        _0x4f388a.reply(_0x9e99d4);
      }, _0x3fc29d);
